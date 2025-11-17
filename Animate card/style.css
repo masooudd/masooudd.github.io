@@ -1,0 +1,59 @@
+header, main, footer{
+border: 1px solid black;
+min-height: 5vh;
+padding: 3%;
+
+
+
+
+}
+
+header{
+
+background-color: white;
+transition: background-color 0.5s
+
+
+}
+header:hover{
+  background-color: blueviolet; 
+}
+
+img{width: 100%;
+transform: scale(1);}
+
+.imgBox{
+
+    border: 2px solid black;
+    padding: 20%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+
+}
+
+.imgBox img{
+
+height: 100%;
+object-fit: cover;
+display: block;
+
+
+
+transition: transform 2s;
+
+}
+
+.imgBox img:hover{
+
+/* transform: scale(1.9); */
+
+}
+ main{
+
+padding: 20%;
+ }
+
+ .large{
+
+    transform: scale(1.9);
+ }
