@@ -1,0 +1,11 @@
+header, footer, main, nav{
+
+border: 1px solid gray;
+
+min-height: 10vh;
+
+padding: 3%;
+
+
+
+}
