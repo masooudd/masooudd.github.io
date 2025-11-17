@@ -1,0 +1,41 @@
+.box, .content{
+
+border: 1px solid black;
+padding: 6%;
+min-height: 10vh;
+
+}
+
+.div1{background-color: aqua;}
+.div2{background-color: rgb(81, 255, 0);}
+.div3{background-color: rgb(4, 0, 255);}
+.div4{background-color: rgb(255, 0, 0);}
+.div5{background-color: rgba(0, 255, 255, 0.658);}
+.div6{background-color: rgba(255, 255, 255, 0.493);}
+.div7{background-color: rgba(46, 53, 53, 0.349);}
+
+.box{
+display:grid;
+grid-template-columns: repeat(7, 60vw);
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
+
+}
+
+.content{
+
+scroll-snap-align: start;
+
+}
+
+@media(min-width:700px){
+
+    .box{
+
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        overflow-x: auto;
+
+    }
+
+}
