@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Template</title>
+    <style>
+        *{box-sizing: border-box; margin: 0; font-family: system-ui;}
+        header, main, footer, nav{border:1px solid black; padding:5%; }
+        img{width:100%;}
+
+
+        .imgBox{
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            grid-area: main;
+        }
+        .imgBox img{
+            height:100%;
+            width:100%;
+            object-fit: cover;
+        }
+
+        .text{
+            grid-area: main;
+            color:white;
+            font-size:3rem;
+        }
+        .card{
+            display: grid;
+            grid-template-areas: "main";
+            place-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">HOME</a>
+            <a href="#contact">contact</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Main heading</h1>
+
+
+        <div class="card">
+
+            <div class="imgBox">
+                <img src="dwlly-BnSPXJT4Ti0-unsplash.jpg" alt="">
+            </div>
+            <h3 class = "text">TEXT PÅ BILD</h3>
+
+        </div>
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

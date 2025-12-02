@@ -1,0 +1,72 @@
+header, main, footer, nav {
+
+        border: 1px solid black;
+        min-height: 10vh;
+        padding: 3%;
+
+        nav{
+
+        display: grid;
+        gap: 20px;
+
+}
+
+
+}
+
+@media(min-width:600px){
+
+nav{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-content: center;
+
+}
+
+}
+
+.card{
+
+padding:
+min-height: 10vh;
+background-color: black;
+
+}
+img{
+
+width: 100%;  
+border: 2px solid white;
+
+
+
+}
+.text{
+
+padding: 3%;
+display: grid;
+gap: 1.5rem;
+color: blue;
+justify-content: center;
+
+}
+
+.text button{
+
+background-color: blue;
+color: yellow;
+}
+
+.imgbox{
+
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        grid-area: main;
+}
+
+
+
+
+
+
+
